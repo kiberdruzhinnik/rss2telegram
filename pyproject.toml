@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rss2telegram"
+version = "0.1.0"
+description = ""
+authors = ["Konstantin Romanov <k-rrr@ya.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.2.1"
+pydantic-settings = "^2.0.3"
+feedparser = "^6.0.10"
+beautifulsoup4 = "^4.12.2"
+pytelegrambotapi = "^4.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
