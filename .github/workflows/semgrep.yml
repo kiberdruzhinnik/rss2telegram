@@ -35,7 +35,7 @@ jobs:
 
     steps:
       # Fetch project source with GitHub Actions Checkout.
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Run the "semgrep ci" command on the command line of the docker image.
       - run: semgrep ci --sarif --config auto --config "p/gitlab" --output=semgrep.sarif --exclude-rule yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.third-party-action-not-pinned-to-commit-sha
         env:
