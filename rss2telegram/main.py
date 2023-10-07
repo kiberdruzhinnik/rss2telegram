@@ -67,11 +67,12 @@ def main():
     new_posts.sort(key=lambda x: x.date)
     for post in new_posts:
         log.info("Publishing post %s", post.title)
+        content = f"**{post.title}**\n\n{post.content}"
         if post.image is not None:
             bot.send_photo(settings.CHANNEL_ID,
-                           photo=post.image, caption=post.content)
+                           photo=post.image, caption=content)
         else:
-            bot.send_message(settings.CHANNEL_ID, post.content)
+            bot.send_message(settings.CHANNEL_ID, content)
 
     log.info("Updating %s posts file with new posts", settings.POSTS_FILE)
     with open(settings.POSTS_FILE, "w", encoding="utf-8") as file_handler:
