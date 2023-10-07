@@ -67,7 +67,7 @@ def main():
     new_posts.sort(key=lambda x: x.date)
     for post in new_posts:
         log.info("Publishing post %s", post.title)
-        content = f"**{post.title}**\n\n{post.content}"
+        content = f"{post.title}\n\n{post.content}"
         if post.image is not None:
             bot.send_photo(settings.CHANNEL_ID,
                            photo=post.image, caption=content)
