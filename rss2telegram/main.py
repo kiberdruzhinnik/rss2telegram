@@ -55,6 +55,9 @@ def main():
             date=convert_time_struct_to_dt(entry["published_parsed"])
         )
 
+        if "guid" not in entry:
+            entry["guid"] = entry["title"]
+
         if entry["guid"] not in guids:
             log.info("Got new post %s", post.title)
             new_posts.append(post)
