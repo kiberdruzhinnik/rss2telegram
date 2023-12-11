@@ -9,7 +9,7 @@ COPY rss2telegram ./rss2telegram
 RUN touch README.md && \
     apk update && \
     apk add --no-cache python3 poetry && \
-    poetry install --without test,docs,dev && \
+    poetry install --without dev && \
     rm -rf $POETRY_CACHE_DIR README.md pyproject.toml poetry.lock && \
     apk del poetry && \
     addgroup -S appgroup && \
