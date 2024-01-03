@@ -6,7 +6,7 @@ authors = ["Konstantin Romanov <k-rrr@ya.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 pydantic = "^2.5.3"
 pydantic-settings = "^2.1.0"
 feedparser = "^6.0.11"
