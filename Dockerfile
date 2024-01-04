@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3.10-alpine
 ENV POETRY_NO_INTERACTION=1 \
     POETRY_VIRTUALENVS_IN_PROJECT=1 \
     POETRY_VIRTUALENVS_CREATE=1 \
@@ -9,6 +9,7 @@ COPY rss2telegram ./rss2telegram
 RUN touch README.md && \
     apk update && \
     apk add --no-cache python3 poetry && \
+    pip install --upgrade --no-cache-dir pip && \
     poetry install --without dev && \
     rm -rf $POETRY_CACHE_DIR README.md pyproject.toml poetry.lock && \
     apk del poetry && \
