@@ -317,12 +317,12 @@ python-dotenv = ">=0.21.0"
 
 [[package]]
 name = "pytelegrambotapi"
-version = "4.15.1"
+version = "4.15.2"
 description = "Python Telegram bot api."
 optional = false
 python-versions = "*"
 files = [
-    {file = "pyTelegramBotAPI-4.15.1.tar.gz", hash = "sha256:32cab178dd58bef5f2b40e4009484ca5d5244454755b403103c2c3076bfbd9f1"},
+    {file = "pyTelegramBotAPI-4.15.2.tar.gz", hash = "sha256:fba878ff9530841c8c68c728cef1c2588b470608310e085d8c56ed035ab53cd4"},
 ]
 
 [package.dependencies]
@@ -426,4 +426,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "760e1ca42b9795cea9ddf3a21fe4f3ed23ff56bd08f0c587f138acc2167d929a"
+content-hash = "9f1d6a7276c7f3baa6035778b5a260c8e2edc2245c93f655365dcd721911a945"
