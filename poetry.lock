@@ -298,12 +298,13 @@ yaml = ["pyyaml (>=6.0.1)"]
 
 [[package]]
 name = "pytelegrambotapi"
-version = "4.15.4"
+version = "4.16.1"
 description = "Python Telegram bot api."
 optional = false
-python-versions = "*"
+python-versions = ">=3.8"
 files = [
-    {file = "pyTelegramBotAPI-4.15.4.tar.gz", hash = "sha256:7f5fbf365b0182994a6630d74e4e5e976198ac5929949c6ea10b8c4b492ab667"},
+    {file = "pytelegrambotapi-4.16.1-py3-none-any.whl", hash = "sha256:85451b4fa1a47d99318a50aef361d177d2eb580c5ea6429fadb071cfad17fb35"},
+    {file = "pytelegrambotapi-4.16.1.tar.gz", hash = "sha256:7ecfdac60de4a4c254059fc0f1997ceeb5da72803ffe4f35544b3ec9e9629edb"},
 ]
 
 [package.dependencies]
@@ -315,7 +316,7 @@ aioredis = ["aioredis"]
 coloredlogs = ["coloredlogs"]
 fastapi = ["fastapi"]
 json = ["ujson"]
-pil = ["Pillow"]
+pil = ["pillow"]
 psutil = ["psutil"]
 redis = ["redis (>=3.4.1)"]
 uvicorn = ["uvicorn"]
@@ -407,4 +408,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ba0397b0af9540ea4b7a1e0d1b4d1fddab0253ff453c609a2758640be1664b42"
+content-hash = "69ab80a719cbfeae9a050093423edefb7b737697a6f92731304d9d38ceae7285"
